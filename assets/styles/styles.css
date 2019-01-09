@@ -1,0 +1,34 @@
+h1.navbar-brand {
+    margin-bottom: 0;
+    font-weight: normal;
+}
+
+.game-section {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Specific exercise */
+
+.match {
+    display: inline-block;
+    position: relative;
+    margin: 2px 4px;
+    width: 0.7em;
+    height: 6em;
+    background-color : #deb887;
+}
+
+.match:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 10%;
+    background-color: #D2691E;
+}
+
+.line {
+    margin: 10px;
+}
