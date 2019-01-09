@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Jeu des allumettes</title>
+
+    <link rel="stylesheet" href="assets/styles/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/styles/styles.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <div class="container">
+        <h1 class="navbar-brand text-white">
+            Jeu des allumettes
+        </h1>
+    </div>
+</nav>
+
+<section class="game-section">
+    <div class="container">
+        <div class="card">
+            <h2 class="h5 card-header">
+                Paramétrage de la partie
+            </h2>
+
+            <div class="card-body">
+                <div class="form-group">
+                    <label for="matches-number">
+                        Nombre d'allumettes :
+                    </label>
+
+                    <input id="matches-number" type="number" class="form-control" onclick = "allumette()" value="50">
+                </div>
+
+                <div class="form-group">
+                    <label for="player-1">
+                        Nom du joueur 1 :
+                    </label>
+
+                    <input id="player-1" type="text" class="form-control" placeholder="Joueur 1">
+                </div>
+
+                <div class="form-group">
+                    <label for="player-2">
+                        Nom du joueur 2 :
+                    </label>
+
+                    <input id="player-2" type="text" class="form-control" placeholder="Joueur 2">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="game-section">
+    <div class="container">
+        <div class="card">
+            <h2 class="h5 card-header">
+                Jeu
+            </h2>
+
+            <div class="card-body text-center">
+                <div class="line text-center">
+                    Tour de <span id ="tour-de">Cédric</span> :
+
+                    <button class="btn btn-secondary" id ='btn1' onclick = "button(1)">1</button>
+                    <button class="btn btn-secondary" id ='btn2' onclick = "button(2)">2</button>
+                    <button class="btn btn-secondary" id ='btn3' onclick = "button(3)">3</button>
+                </div>
+
+                <div class="line text-center">
+                    <span>Nombre d'allumettes restantes :</span>
+                    <span id= "allumettes-restantes">9</span>
+                </div>
+
+                <div class="line matches-wrapper">
+                    <div class="match"></div>
+                    <div class="match"></div>
+                    <div class="match"></div>
+                    <div class="match"></div>
+                    <div class="match"></div>
+                    <div class="match"></div>
+                    <div class="match"></div>
+                    <div class="match"></div>
+                    <div class="match"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="game-section">
+    <div class="text-center">
+        <button type="button" onclick = "restart_game()" class="btn btn-primary btn-lg">
+            Recommencer la partie
+        </button>
+    </div>
+</section>
+
+<script src="assets/scripts/scripts.js"></script>
+
+</body>
+</html>
